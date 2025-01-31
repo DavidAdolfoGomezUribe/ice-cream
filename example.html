@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="space">
+
+    <div class="card">
+        <h2>Card Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque at nobis doloremque odit labore provident unde officiis odio sit sint? Vitae accusantium praesentium ullam alias aut quod cum perferendis maiores.</p>
+    </div>
+    <div class="card">
+        <h2>Card Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque at nobis doloremque odit labore provident unde officiis odio sit sint? Vitae accusantium praesentium ullam alias aut quod cum perferendis maiores.</p>
+    </div>
+    <div class="card">
+        <h2>Card Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque at nobis doloremque odit labore provident unde officiis odio sit sint? Vitae accusantium praesentium ullam alias aut quod cum perferendis maiores.</p>
+    </div>
+    <div class="card">
+        <h2>Card Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque at nobis doloremque odit labore provident unde officiis odio sit sint? Vitae accusantium praesentium ullam alias aut quod cum perferendis maiores.</p>
+    </div>
+</div>    
+<style>
+
+*{
+    outline: 1px solid tomato;
+}    
+
+    body {
+        height: 100vh;
+    }
+    
+.space{
+    /* margin-inline: max(0px, ((100% - 260px) / 2)); */
+    font: 90%/1.4 system-ui;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    height: 320px;
+    width: 280px;
+    gap: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    scroll-behavior: smooth;
+    align-items: center;
+
+}
+
+.card {
+    margin-top: 20px;
+    position:sticky;
+    top: 10px;
+    background: white;
+    padding: 1.5rem;
+    box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    height: 400px;
+    width: 180px;
+}
+
+.card:nth-child(1) {
+  top: 0px;
+}
+
+.card:nth-child(2) {
+    top: 0px;
+}
+
+.card:nth-child(3) {
+    top: 0px;
+}
+
+.card:nth-child(4) {
+    top: 0px;
+}
+
+.card:nth-child(5) {
+    top: 0px;
+    
+}
+
+
+
+  </style>
+    
+</body>
+</html>

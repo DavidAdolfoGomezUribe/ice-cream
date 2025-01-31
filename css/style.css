@@ -1,6 +1,210 @@
 @import url(variables.css);
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+*{margin: 0; padding: 0; 
+    outline: 1px solid tomato;
+}
+*::before, *::after{box-sizing: border-box;}
+body{min-height: 100dvh;}
+input, button, textarea, select{font: inherit;}
+p{text-wrap: pretty;}
+h1, h2, h3, h4, h5, h6{text-wrap: balance;}
+img, video, svg{height: auto; max-width: 100%;}
+@media (prefers-reduced-motion: reduce){
+*, *::before, *::after{
+animation-duration: 0.01ms !important;
+animation-iteration-count: 1 !important;
+max-width: 100%;
+transition-duration: 0.01ms !important;
+scroll-behavior: auto !important;
+transition: none;
+}
+}
+/* 1728*/
+body{
+    
+
+}
+.background{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    img{
+        width: 100%;
+        object-fit:fill ;
+        height: auto;
+        
+    }
+}
+
+.logo{
+    position: absolute;
+    top: 4.91vw ;
+    left: 6.13vw ;
+    width: 11.11vw;
+    height: 4.28vw;
+    img{
+        width: 11.11vw;
+        height: 4.28vw;
+    }
+}
+
+.flexnav{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    gap:3.125vw;
+    left: 40.04vw;
+    top: 6.07vw;
+
+    a{
+        font-size: 1.62vw;
+        color: white;
+        text-decoration: none;
+    }
+    img{
+        height: 1.73vw;
+        width:  1.73vw;
+    }
+}
+
+.sidemenu{
+    left: 92.36vw;
+    position: absolute;
+    top: 6.36vw;
+
+    img{
+       width:   1.48vw;
+       height: 1.62vw;
+
+    }
+}
+
+.flextext{
+    position: absolute;
+    width: 39.29vw;
+    height: auto;
+    left: 5.729vw;
+    top: 15.628vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+
+    h1{
+       font-size: 6.94vw;
+    }
+
+    p{
+        font-size: 1.38vw
+    }
+
+    div{
+        display: flex;
+        flex-direction: row;
+        gap: 2.2vw;
+
+        button:nth-child(1){
+            width: 15.27vw ;
+            height: 4.91vw;
+            top: 36.57vw;
+            border: 1px solid white;
+            background-color: hsla(0, 0%, 0%, 0);
+            color: white;
+            border-radius: 1vw;
+            font-size: 1.85vw;
+            cursor: pointer;
+            
+        }
+
+        button:nth-child(2){
+            width: 15.27vw ;
+            height: 4.91vw;
+            top: 36.57vw;
+            border: none;
+            backdrop-filter: blur(10px);
+            background-color: rgba(97, 97, 97, 0.082);
+            color: rgb(255, 255, 255);
+            border-radius: 1vw;
+            font-size: 1.85vw;
+            cursor: pointer;
+            
+        }
+
+    }
+
+}
+
+.box1{
+    color: white;
+    position: absolute;
+    top: 50.92vw;
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    left: 8.82vw;
+    width:82.87vw;
+    height: 18.75vw;
+    align-items: center;
+    
+    
+    
+
+    
+    .card1{
+        display: flex;
+        flex-direction: row;
+        width: 39.93vw;
+
+        img{
+            width: 12.55vw;
+            height: 12.55vw;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+
+            h2{
+                
+            }
+            p{
+
+            }
+            
+            .buttonflex1{
+                display: flex;
+                flex-direction: row;
+                color: white;
+            }
+
+            .textrow1{
+                display: flex;
+                flex-direction: row;
+                
+                .amountflex1{
+                    display: flex;
+                    flex-direction: row;
+                }
+                
+            }
+            
+        }
+    }
+    
+}
+
+
+div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+}
+
+
+.box2{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    top: 1000px;
 }
