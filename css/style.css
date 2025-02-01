@@ -1,581 +1,537 @@
 @import url(variables.css);
+* {
+  margin: 0;
+  padding: 0;
+  /*outline: 1px solid tomato;*/
+}
 
-*{margin: 0; padding: 0; 
-    /*outline: 1px solid tomato;*/
+*::before, *::after {
+  box-sizing: border-box;
 }
-*::before, *::after{box-sizing: border-box;}
-body{min-height: 100dvh;}
-input, button, textarea, select{font: inherit;}
-p{text-wrap: pretty;}
-h1, h2, h3, h4, h5, h6{text-wrap: balance;}
-img, video, svg{height: auto; max-width: 100%;}
-@media (prefers-reduced-motion: reduce){
-*, *::before, *::after{
-animation-duration: 0.01ms !important;
-animation-iteration-count: 1 !important;
-max-width: 100%;
-transition-duration: 0.01ms !important;
-scroll-behavior: auto !important;
-transition: none;
+
+body {
+  min-height: 100dvh;
 }
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+img, video, svg {
+  height: auto;
+  max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    max-width: 100%;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition: none;
+  }
 }
 /* 1728*/
-body{
-    
-
-}
-.background{
-    position: absolute;
-    width: 100%;
-    height: auto;
-    z-index: -1;
-    img{
-        width: 100%;
-        object-fit:fill ;
-        height: auto;
-        
-    }
+body {
+  background: none;
 }
 
-.logo{
-    position: absolute;
-    top: 4.91vw ;
-    left: 6.13vw ;
-    width: 11.11vw;
-    height: 4.28vw;
-    img{
-        width: 11.11vw;
-        height: 4.28vw;
-    }
+.background {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+.background img {
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 101%;
 }
 
-.flexnav{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    gap:3.125vw;
-    left: 40.04vw;
-    top: 6.07vw;
-
-    a{
-        font-size: 1.62vw;
-        color: white;
-        text-decoration: none;
-    }
-    img{
-        height: 1.73vw;
-        width:  1.73vw;
-    }
+.logo {
+  position: absolute;
+  top: 4.91vw;
+  left: 6.13vw;
+  width: 11.11vw;
+  height: 4.28vw;
+}
+.logo img {
+  width: 11.11vw;
+  height: 4.28vw;
 }
 
-.sidemenu{
-    left: 92.36vw;
-    position: absolute;
-    top: 6.36vw;
-
-    img{
-       width:   1.48vw;
-       height: 1.62vw;
-
-    }
+.flexnav {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  gap: 3.125vw;
+  left: 40.04vw;
+  top: 6.07vw;
+}
+.flexnav a {
+  font-size: 1.62vw;
+  color: white;
+  text-decoration: none;
+}
+.flexnav img {
+  height: 1.73vw;
+  width: 1.73vw;
 }
 
-.flextext{
-    position: absolute;
-    width: 39.29vw;
-    height: auto;
-    left: 5.729vw;
-    top: 15.628vw;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5vw;
-
-    h1{
-       font-size: 6.94vw;
-    }
-
-    p{
-        font-size: 1.38vw
-    }
-
-    div{
-        display: flex;
-        flex-direction: row;
-        gap: 2.2vw;
-
-        button:nth-child(1){
-            width: 15.27vw ;
-            height: 4.91vw;
-            top: 36.57vw;
-            border: 1px solid white;
-            background-color: hsla(0, 0%, 0%, 0);
-            color: white;
-            border-radius: 1vw;
-            font-size: 1.85vw;
-            cursor: pointer;
-            
-        }
-
-        button:nth-child(2){
-            width: 15.27vw ;
-            height: 4.91vw;
-            top: 36.57vw;
-            border: none;
-            backdrop-filter: blur(10px);
-            background-color: rgba(97, 97, 97, 0.082);
-            color: rgb(255, 255, 255);
-            border-radius: 1vw;
-            font-size: 1.85vw;
-            cursor: pointer;
-            
-        }
-
-    }
-
+.sidemenu {
+  left: 92.36vw;
+  position: absolute;
+  top: 6.36vw;
+}
+.sidemenu img {
+  width: 1.48vw;
+  height: 1.62vw;
 }
 
-.box1{
-
-    color: white;
-    position: absolute;
-    top: 50.92vw;
-    display: flex;
-    flex-direction: row;
-    gap: 3vw;
-    left: 8.82vw;
-    width:82.87vw;
-    height: 18.75vw;
-    align-items: center;
-    
-    
-    .card1{
-        border: 1px solid rgba(255, 255, 255, 0.75);
-        display: flex;
-        flex-direction: row;
-        width: 39.93vw;
-        gap: 1.73vw;
-        align-items: center;
-        justify-content: center;
-        backdrop-filter: blur(10px);
-        border-radius: 1.38vw;
-        height: 18.79vw;
-        
-        img{
-            width: 13.55vw;
-            height: 13.55vw;
-        }
-        div{
-            gap: 1vw;
-            display: flex;
-            flex-direction: column;
-
-            h2{
-                font-size: 1.62vw;
-            }
-            p{
-                font-size: 1.15vw;
-            }
-            
-            .buttonflex1{
-                display: flex;
-                flex-direction: row;
-                color: white;
-                gap: 1.21vw;
-                justify-content: center;
-                align-items: center;
-                
-                button{
-                    background-color: transparent;
-                    border: 1px solid hsla(0, 0%, 100%, 0.75);
-                    border-radius: 0.46vw;
-                    width: 8.04vw;
-                    height: 2.31vw;
-                    color: white;
-                    font-size: 1.04vw;
-                }
-            
-            }
-
-            .textrow1{
-                display: flex;
-                flex-direction: row;
-                gap:4.28vw ;
-                font-size: 1.62vw;
-                justify-content: center;
-                align-items: center;
-
-                
-                .amountflex1{
-
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                    border: 1px solid white; 
-                    width: 4.86vw;
-                    height: 1.67vw;
-                    border-radius: 1vw;
-
-
-                    button{
-                        color: white;
-                        background-color: transparent;
-                        border: none;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-
-                    button:nth-child(1){
-
-                        height: 1vw;
-                        border-right: 1px solid white;
-                        padding-right: 0.2vw;
-                    }
-
-                    button:nth-child(2){
-
-                        height: 1vw;
-                        border-left: 1px solid white;
-                        padding-left: 0.2vw;
-                    }
-
-                }
-                
-            }
-            
-        }
-    }
-    
+.flextext {
+  position: absolute;
+  width: 39.29vw;
+  height: auto;
+  left: 5.729vw;
+  top: 15.628vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+.flextext h1 {
+  font-size: 6.94vw;
+}
+.flextext p {
+  font-size: 1.38vw;
+}
+.flextext div {
+  display: flex;
+  flex-direction: row;
+  gap: 2.2vw;
+}
+.flextext div button:nth-child(1) {
+  width: 15.27vw;
+  height: 4.91vw;
+  top: 36.57vw;
+  border: 1px solid white;
+  background-color: hsla(0, 0%, 0%, 0);
+  color: white;
+  border-radius: 1vw;
+  font-size: 1.85vw;
+  cursor: pointer;
+}
+.flextext div button:nth-child(2) {
+  width: 15.27vw;
+  height: 4.91vw;
+  top: 36.57vw;
+  border: none;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: rgba(97, 97, 97, 0.082);
+  color: rgb(255, 255, 255);
+  border-radius: 1vw;
+  font-size: 1.85vw;
+  cursor: pointer;
 }
 
-
-.box1{
-    
-    .card2{
-        display: flex;
-        flex-direction: row;
-        width: 39.93vw;
-        gap: 1.73vw;
-        align-items: center;
-        justify-content: center;
-        background-color: #ffffff;
-        height: 18.79vw;
-        border-radius: 1.388vw;
-        color: black;
-        
-
-        
-        img{
-            width: 13.55vw;
-            height: 13.55vw;
-        }
-
-        div{
-            gap: 1vw;
-            display: flex;
-            flex-direction: column;
-
-            h2{
-                font-size: 1.62vw;
-            }
-            p{
-                font-size: 1.15vw;
-            }
-            
-            .buttonflex2{
-                display: flex;
-                flex-direction: row;
-                color: white;
-                gap: 1.21vw;
-                justify-content: center;
-                align-items: center;
-                
-
-                button{
-                    background-color: transparent;
-                    border: 1px solid hsla(0, 0%, 0%, 0.75);
-                    border-radius: 0.46vw;
-                    width: 8.04vw;
-                    height: 2.31vw;
-                    color: rgb(0, 0, 0);
-                    font-size: 1.04vw;
-                }
-            }
-
-            .textrow2{
-                display: flex;
-                flex-direction: row;
-                gap:4.28vw ;
-                font-size: 1.62vw;
-                justify-content: center;
-                align-items: center;
-
-                
-                .amountflex2{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                    border: 1px solid rgb(7, 7, 7); 
-                    width: 4.86vw;
-                    height: 1.67vw;
-                    border-radius: 1vw;
-                    
-                    button{
-                        color: rgb(0, 0, 0);
-                        background-color: transparent;
-                        border: none;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-
-                    button:nth-child(1){
-
-                        height: 1vw;
-                        border-right: 1px solid rgb(0, 0, 0);
-                        padding-right: 0.2vw;
-                    }
-
-                    button:nth-child(2){
-
-                        height: 1vw;
-                        border-left: 1px solid rgb(0, 0, 0);
-                        padding-left: 0.2vw;
-                    }
-          
-                }
-                
-            }
-            
-        }
-    }
-    
+.trendy {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  width: 12.32vw;
+  height: 3.4vw;
+  color: black;
+  border-radius: 5vw;
+  align-items: center;
+  gap: 1vw;
+  justify-content: flex-end;
+  position: absolute;
+  left: 79.39vw;
+  top: 45.19vw;
+}
+.trendy img {
+  position: relative;
+  height: 4.58vw;
+  width: 4.58vw;
+  bottom: 1.2vw;
 }
 
-.box2{
-
-    color: white;
-    position: absolute;
-    top: 73.09vw;
-    display: flex;
-    flex-direction: row;
-    gap: 3vw;
-    left: 8.82vw;
-    width:82.87vw;
-    height: 18.75vw;
-    align-items: center;
-    
-    
-    .card3{
-        
-        display: flex;
-        flex-direction: row;
-        width: 39.93vw;
-        gap: 1.73vw;
-        align-items: center;
-        justify-content: center;
-        backdrop-filter: blur(10px);
-        border-radius: 1.38vw;
-        height: 18.79vw;
-        
-        img{
-            width: 13.55vw;
-            height: 13.55vw;
-        }
-        div{
-            gap: 1vw;
-            display: flex;
-            flex-direction: column;
-
-            h2{
-                font-size: 1.62vw;
-            }
-            p{
-                font-size: 1.15vw;
-            }
-            
-            .buttonflex3{
-                display: flex;
-                flex-direction: row;
-                color: white;
-                gap: 1.21vw;
-                justify-content: center;
-                align-items: center;
-                
-                button{
-                    background-color: transparent;
-                    border: 1px solid hsla(0, 0%, 100%, 0.75);
-                    border-radius: 0.46vw;
-                    width: 8.04vw;
-                    height: 2.31vw;
-                    color: white;
-                    font-size: 1.04vw;
-                
-                }
-            
-            }
-
-            .textrow3{
-                display: flex;
-                flex-direction: row;
-                gap:4.28vw ;
-                font-size: 1.62vw;
-                justify-content: center;
-                align-items: center;
-
-                
-                .amountflex3{
-
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                    border: 1px solid white; 
-                    width: 4.86vw;
-                    height: 1.67vw;
-                    border-radius: 1vw;
-
-
-                    button{
-                        color: white;
-                        background-color: transparent;
-                        border: none;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-
-                    button:nth-child(1){
-
-                        height: 1vw;
-                        border-right: 1px solid white;
-                        padding-right: 0.2vw;
-                    }
-
-                    button:nth-child(2){
-
-                        height: 1vw;
-                        border-left: 1px solid white;
-                        padding-left: 0.2vw;
-                    }
-
-                }
-                
-            }
-            
-        }
-    }
-    
+.box1 {
+  color: white;
+  position: absolute;
+  top: 50.92vw;
+  display: flex;
+  flex-direction: row;
+  gap: 3vw;
+  left: 8.82vw;
+  width: 82.87vw;
+  height: 18.75vw;
+  align-items: center;
+}
+.box1 .card1 {
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  display: flex;
+  flex-direction: row;
+  width: 39.93vw;
+  gap: 1.73vw;
+  align-items: center;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 1.38vw;
+  height: 18.79vw;
+}
+.box1 .card1 img {
+  width: 13.55vw;
+  height: 13.55vw;
+}
+.box1 .card1 div {
+  gap: 1vw;
+  display: flex;
+  flex-direction: column;
+}
+.box1 .card1 div h2 {
+  font-size: 1.62vw;
+}
+.box1 .card1 div p {
+  font-size: 1.15vw;
+}
+.box1 .card1 div .buttonflex1 {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  gap: 1.21vw;
+  justify-content: center;
+  align-items: center;
+}
+.box1 .card1 div .buttonflex1 button {
+  background-color: transparent;
+  border: 1px solid hsla(0, 0%, 100%, 0.75);
+  border-radius: 0.46vw;
+  width: 8.04vw;
+  height: 2.31vw;
+  color: white;
+  font-size: 1.04vw;
+  cursor: pointer;
+}
+.box1 .card1 div .textrow1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.box1 .card1 div .textrow1 p {
+  font-size: 1.62vw;
+}
+.box1 .card1 div .textrow1 .amountflex1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid white;
+  height: 1.67vw;
+  border-radius: 0.63vw;
+}
+.box1 .card1 div .textrow1 .amountflex1 p {
+  font-size: 1vw;
+}
+.box1 .card1 div .textrow1 .amountflex1 button {
+  width: 1.3vw;
+  font-size: 0.81vw;
+  color: white;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.box1 .card1 div .textrow1 .amountflex1 button:nth-child(1) {
+  height: 1vw;
+  border-right: 1px solid white;
+}
+.box1 .card1 div .textrow1 .amountflex1 button:nth-child(3) {
+  height: 1vw;
+  border-left: 1px solid white;
 }
 
-
-.box2{
-    
-    .card4{
-        display: flex;
-        flex-direction: row;
-        width: 39.93vw;
-        gap: 1.73vw;
-        align-items: center;
-        justify-content: center;
-        backdrop-filter: blur(10px);
-        height: 18.79vw;
-        border-radius: 1.388vw;
-        color: white;
-        border: 1px solid white;
-
-
-        
-        img{
-            width: 13.55vw;
-            height: 13.55vw;
-        }
-        
-        div{
-            gap: 1vw;
-            display: flex;
-            flex-direction: column;
-
-            h2{
-                font-size: 1.62vw;
-            }
-            p{
-                font-size: 1.15vw;
-            }
-            
-            .buttonflex4{
-                display: flex;
-                flex-direction: row;
-                color: white;
-                gap: 1.21vw;
-                justify-content: center;
-                align-items: center;
-                
-
-                button{
-                    background-color: transparent;
-                    border: 1px solid hsla(0, 0%, 100%, 0.75);
-                    border-radius: 0.46vw;
-                    width: 8.04vw;
-                    height: 2.31vw;
-                    color: rgb(255, 255, 255);
-                    font-size: 1.04vw;
-                }
-            }
-
-            .textrow4{
-                display: flex;
-                flex-direction: row;
-                gap:4.28vw ;
-                font-size: 1.62vw;
-                justify-content: center;
-                align-items: center;
-
-                
-                .amountflex4{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                    border: 1px solid rgb(255, 255, 255); 
-                    width: 4.86vw;
-                    height: 1.67vw;
-                    border-radius: 1vw;
-                    
-                    button{
-                        color: rgb(255, 255, 255);
-                        background-color: transparent;
-                        border: none;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-
-                    button:nth-child(1){
-
-                        height: 1vw;
-                        border-right: 1px solid rgb(255, 255, 255);
-                        padding-right: 0.2vw;
-                    }
-
-                    button:nth-child(2){
-
-                        height: 1vw;
-                        border-left: 1px solid rgb(255, 255, 255);
-                        padding-left: 0.2vw;
-                    }
-          
-                }
-                
-            }
-            
-        }
-    }
-    
+.box1 .card2 {
+  display: flex;
+  flex-direction: row;
+  width: 39.93vw;
+  gap: 1.73vw;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  height: 18.79vw;
+  border-radius: 1.388vw;
+  color: black;
+}
+.box1 .card2 img {
+  width: 13.55vw;
+  height: 13.55vw;
+}
+.box1 .card2 div {
+  gap: 1vw;
+  display: flex;
+  flex-direction: column;
+}
+.box1 .card2 div h2 {
+  font-size: 1.62vw;
+}
+.box1 .card2 div p {
+  font-size: 1.15vw;
+}
+.box1 .card2 div .buttonflex2 {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  gap: 1.21vw;
+  justify-content: center;
+  align-items: center;
+}
+.box1 .card2 div .buttonflex2 button {
+  background-color: transparent;
+  border: 1px solid hsla(0, 0%, 0%, 0.75);
+  border-radius: 0.46vw;
+  width: 8.04vw;
+  height: 2.31vw;
+  color: rgb(0, 0, 0);
+  font-size: 1.04vw;
+}
+.box1 .card2 div .textrow2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.box1 .card2 div .textrow2 p {
+  font-size: 1.62vw;
+}
+.box1 .card2 div .textrow2 .amountflex2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid rgb(7, 7, 7);
+  height: 1.67vw;
+  border-radius: 0.63vw;
+}
+.box1 .card2 div .textrow2 .amountflex2 p {
+  font-size: 1vw;
+}
+.box1 .card2 div .textrow2 .amountflex2 button {
+  width: 1.3vw;
+  font-size: 0.81vw;
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.box1 .card2 div .textrow2 .amountflex2 button:nth-child(1) {
+  height: 1vw;
+  border-right: 1px solid rgb(0, 0, 0);
+}
+.box1 .card2 div .textrow2 .amountflex2 button:nth-child(3) {
+  height: 1vw;
+  border-left: 1px solid rgb(0, 0, 0);
 }
 
+.box2 {
+  color: white;
+  position: absolute;
+  top: 73.09vw;
+  display: flex;
+  flex-direction: row;
+  gap: 3vw;
+  left: 8.82vw;
+  width: 82.87vw;
+  height: 18.75vw;
+  align-items: center;
+}
+.box2 .card3 {
+  display: flex;
+  flex-direction: row;
+  width: 39.93vw;
+  gap: 1.73vw;
+  align-items: center;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 1.38vw;
+  height: 18.79vw;
+}
+.box2 .card3 img {
+  width: 13.55vw;
+  height: 13.55vw;
+}
+.box2 .card3 div {
+  gap: 1vw;
+  display: flex;
+  flex-direction: column;
+}
+.box2 .card3 div h2 {
+  font-size: 1.62vw;
+}
+.box2 .card3 div p {
+  font-size: 1.15vw;
+}
+.box2 .card3 div .buttonflex3 {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  gap: 1.21vw;
+  justify-content: center;
+  align-items: center;
+}
+.box2 .card3 div .buttonflex3 button {
+  background-color: transparent;
+  border: 1px solid hsla(0, 0%, 100%, 0.75);
+  border-radius: 0.46vw;
+  width: 8.04vw;
+  height: 2.31vw;
+  color: white;
+  font-size: 1.04vw;
+}
+.box2 .card3 div .textrow3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.box2 .card3 div .textrow3 p {
+  font-size: 1.62vw;
+}
+.box2 .card3 div .textrow3 .amountflex3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid white;
+  height: 1.67vw;
+  border-radius: 0.63vw;
+}
+.box2 .card3 div .textrow3 .amountflex3 p {
+  font-size: 1vw;
+}
+.box2 .card3 div .textrow3 .amountflex3 button {
+  width: 1.3vw;
+  font-size: 0.81vw;
+  color: white;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.box2 .card3 div .textrow3 .amountflex3 button:nth-child(1) {
+  height: 1vw;
+  border-right: 1px solid white;
+}
+.box2 .card3 div .textrow3 .amountflex3 button:nth-child(3) {
+  height: 1vw;
+  border-left: 1px solid white;
+}
 
+.box2 .card4 {
+  display: flex;
+  flex-direction: row;
+  width: 39.93vw;
+  gap: 1.73vw;
+  align-items: center;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  height: 18.79vw;
+  border-radius: 1.388vw;
+  color: white;
+  border: 1px solid white;
+}
+.box2 .card4 img {
+  width: 13.55vw;
+  height: 13.55vw;
+}
+.box2 .card4 div {
+  gap: 1vw;
+  display: flex;
+  flex-direction: column;
+}
+.box2 .card4 div h2 {
+  font-size: 1.62vw;
+}
+.box2 .card4 div p {
+  font-size: 1.15vw;
+}
+.box2 .card4 div .buttonflex4 {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  gap: 1.21vw;
+  justify-content: center;
+  align-items: center;
+}
+.box2 .card4 div .buttonflex4 button {
+  background-color: transparent;
+  border: 1px solid hsla(0, 0%, 100%, 0.75);
+  border-radius: 0.46vw;
+  width: 8.04vw;
+  height: 2.31vw;
+  color: rgb(255, 255, 255);
+  font-size: 1.04vw;
+}
+.box2 .card4 div .textrow4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.box2 .card4 div .textrow4 p {
+  font-size: 1.62vw;
+}
+.box2 .card4 div .textrow4 .amountflex4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid white;
+  height: 1.67vw;
+  border-radius: 0.63vw;
+}
+.box2 .card4 div .textrow4 .amountflex4 p {
+  font-size: 1vw;
+}
+.box2 .card4 div .textrow4 .amountflex4 button {
+  width: 1.3vw;
+  font-size: 0.81vw;
+  color: white;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.box2 .card4 div .textrow4 .amountflex4 button:nth-child(1) {
+  height: 1vw;
+  border-right: 1px solid rgb(255, 255, 255);
+}
+.box2 .card4 div .textrow4 .amountflex4 button:nth-child(3) {
+  height: 1vw;
+  border-left: 1px solid rgb(255, 255, 255);
+}/*# sourceMappingURL=style.css.map */
