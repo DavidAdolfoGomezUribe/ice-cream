@@ -1,0 +1,46 @@
+
+let items = document.querySelectorAll('.slider .item');
+let active = 0;
+
+function loadShow(){
+    items[active].style.transform = `none`;
+    items[active].style.zIndex = 1;
+    items[active].style.filter = 'none';
+    items[active].style.opacity = 1;
+    items[active].style.backgroundColor = `hsla(0, 0.00%, 100.00%, 100.00%, 0.75)` ;
+    items[active].style.color = `black` ;
+
+    let stt = 0;
+    for(var i = active + 1; i < items.length; i ++){
+        stt++;
+        items[i].style.transform = `translateY(${2.2*stt}vw) scale(${1 - 0.2*stt}) perspective(16px) rotateY(-0deg) ` ;
+        items[i].style.zIndex = -stt;
+        items[i].style.filter = 'none';
+        items[i].style.opacity = stt > 2 ? 0 : 0.9;
+        items[i].style.backgroundColor = "hsl(0, 0.00%, 100.00%)" ;
+    }
+     stt = 0;
+    
+    for(var i = (active - 1); i >= 0; i --){
+        stt++;
+        items[i].style.transform = `translateY(${-2.2*stt}vw) scale(${1 - 0.2*stt}) perspective(16px) rotateY(0deg)`;
+        items[i].style.zIndex = -stt;
+        items[i].style.filter = 'none';
+        items[i].style.opacity = stt > 2 ? 0 : 0.9;
+        items[i].style.backgroundColor = "hsl(0, 0.00%, 100.00%)" ;
+        
+    }
+}
+
+loadShow();
+let next = document.getElementById('next');
+let prev = document.getElementById('prev');
+
+next.onclick = function(){
+   active = active + 1 < items.length ?  active + 1 : active;
+   loadShow();
+}
+prev.onclick = function(){
+    active = active - 1 >= 0 ? active -1 : active;
+    loadShow();
+}

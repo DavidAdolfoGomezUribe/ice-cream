@@ -49,7 +49,7 @@ body {
   position: absolute;
   width: 100%;
   height: auto;
-  z-index: -1;
+  z-index: -2;
 }
 .background img {
   width: 100%;
@@ -146,66 +146,87 @@ body {
   cursor: pointer;
 }
 
-.space {
-  overflow-y: scroll;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  height: 14.85vw;
-  width: 28vw;
-  gap: 6vw;
+.slider {
+  top: 16.37vw;
+  left: 71.81vw;
   position: absolute;
-  scroll-behavior: smooth;
-  align-items: center;
-  top: 16.5vw;
-  left: 69.9vw;
-}
-
-.cardEx {
-  height: 18.68vw;
   width: 19.96vw;
-  background: white;
-  border-radius: 20px;
-}
-
-.card {
   height: 11.68vw;
-  width: 19.96vw;
-  background: white;
-  border-radius: 20px;
+  display: flex;
+}
+
+.item {
+  position: absolute;
+  padding: 2vw;
+  text-align: justify;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: 0.5s;
   display: flex;
   flex-direction: column;
+  gap: 1vw;
   text-align: justify;
-  padding: 1.6vw;
-  position: sticky;
 }
-.card div {
+.item p {
+  font-size: 1.04vw;
+}
+.item div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4vw;
+}
+.item div img {
+  width: 3.35vw;
+  height: 3.38vw;
+}
+.item div div {
+  display: flex;
+  flex-direction: column;
+}
+.item div div h2 {
+  font-size: 1.62vw;
+}
+.item div div div {
   display: flex;
   flex-direction: row;
 }
-.card div div {
-  display: flex;
-  flex-direction: column;
+.item div div div img {
+  width: 1.5vw;
+  height: 1.5vw;
+  transition: transform 0.3s ease;
+}
+.item div div div img:hover {
+  transform: scale(1.2);
 }
 
-.card:nth-child(1) {
-  top: 0px;
+#next {
+  position: absolute;
+  transform: rotateZ(90deg);
+  left: 22vw;
+  top: 7.4vw;
 }
 
-.card:nth-child(2) {
-  top: 0px;
+#prev {
+  position: absolute;
+  left: 22vw;
+  top: -1vw;
+  transform: rotateZ(90deg);
 }
 
-.card:nth-child(3) {
-  top: 0px;
+#prev, #next {
+  color: #fff;
+  background: none;
+  border: none;
+  font-size: 3.8vw;
+  font-family: monospace;
+  font-weight: bold;
+  opacity: 0.8;
+  transition: opacity 0.5s;
 }
 
-.card:nth-child(4) {
-  top: 0px;
-}
-
-.card:nth-child(5) {
-  top: 0px;
+#prev:hover,
+#next:hover {
+  opacity: 1;
 }
 
 .choosetype {
