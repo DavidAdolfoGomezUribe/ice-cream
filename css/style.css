@@ -146,6 +146,105 @@ body {
   cursor: pointer;
 }
 
+.space {
+  /* margin-inline: max(0px, ((100% - 260px) / 2)); */
+  font: 90%/1.4 system-ui;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: 14.85vw;
+  width: 27vw;
+  gap: 4vw;
+  position: absolute;
+  scroll-behavior: smooth;
+  align-items: center;
+  top: 16.37vw;
+  left: 70.81vw;
+}
+
+.card {
+  height: 11.68vw;
+  width: 19.96vw;
+  margin-top: 20px;
+  position: sticky;
+  top: 10px;
+  background: white;
+  padding: 1.5rem;
+  box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  vertical-align: middle;
+}
+.card div {
+  display: flex;
+  flex-direction: row;
+}
+.card div div {
+  display: flex;
+  flex-direction: column;
+}
+
+.card:nth-child(1) {
+  top: 0px;
+}
+
+.card:nth-child(2) {
+  top: 0px;
+}
+
+.card:nth-child(3) {
+  top: 0px;
+}
+
+.card:nth-child(4) {
+  top: 0px;
+}
+
+.card:nth-child(5) {
+  top: 0px;
+}
+
+.choosetype {
+  position: absolute;
+  top: 32.46vw;
+  left: 71.81vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  width: 22.8vw;
+}
+.choosetype p {
+  font-size: 1.15vw;
+}
+.choosetype div {
+  display: flex;
+  flex-direction: row;
+  width: 22.8vw;
+  align-items: center;
+  justify-content: space-between;
+}
+.choosetype div button {
+  border-radius: 0.694vw;
+  background-color: rgba(255, 255, 255, 0.116);
+  width: 3.85vw;
+  height: 3.85vw;
+  border: none;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.choosetype div button img {
+  width: 2vw;
+}
+
 .trendy {
   display: flex;
   flex-direction: row;
@@ -160,6 +259,9 @@ body {
   position: absolute;
   left: 79.39vw;
   top: 45.19vw;
+}
+.trendy p {
+  font-size: 1.62vw;
 }
 .trendy img {
   position: relative;
