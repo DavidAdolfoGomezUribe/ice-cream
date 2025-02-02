@@ -139,37 +139,46 @@ body{
 
 
 .space{
-    /* margin-inline: max(0px, ((100% - 260px) / 2)); */
-    font: 90%/1.4 system-ui;
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
     height: 14.85vw;
-    width: 27vw;
-    gap: 4vw;
+    width: 28vw;
+    gap: 6vw;
     position: absolute;
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
     align-items: center;
-    top: 16.37vw;
-    left: 70.81vw;
+    top: 16.5vw;
+    left: 69.9vw;
+
+    
+}
+
+.cardEx{
+    height: 18.68vw;
+    width: 19.96vw;
+    background: white;
+    
+    
+    border-radius: 20px;
+    
+    
+    
 
 }
 
 .card {
     height: 11.68vw;
     width: 19.96vw;
-    margin-top: 20px;
-    position:sticky;
-    top: 10px;
     background: white;
-    padding: 1.5rem;
-    box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.15);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     text-align: justify;
-    vertical-align: middle;
+    padding: 1.6vw;
+    position: sticky;
+
 
     div{
         display: flex;
