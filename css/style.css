@@ -257,8 +257,8 @@ body {
   width: 3.85vw;
   height: 3.85vw;
   border: none;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -297,7 +297,7 @@ body {
 .box1 {
   color: white;
   position: absolute;
-  top: 50.92vw;
+  top: 50.92svw;
   display: flex;
   flex-direction: row;
   gap: 3vw;
@@ -660,4 +660,27 @@ body {
 .box2 .card4 div .textrow4 .amountflex4 button:nth-child(3) {
   height: 1vw;
   border-left: 1px solid rgb(255, 255, 255);
+}
+
+footer {
+  width: 100%;
+  position: relative;
+}
+footer h3 {
+  position: relative;
+  left: 5.72vw;
+  color: white;
+  top: 95.94vw;
+  width: 30vw;
+  height: 2.5vw;
+}
+footer div {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 17.36vw;
+  height: 2.256vw;
+  justify-content: space-between;
+  top: 92.79vw;
+  left: 77.25vw;
 }/*# sourceMappingURL=style.css.map */

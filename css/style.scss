@@ -260,7 +260,7 @@ body{
             width: 3.85vw;
             height: 3.85vw;
             border: none;
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(3px);
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -306,12 +306,16 @@ body{
 
 }
 
+@media ( max-width: 1440px ) {
+
+}
+
 
 .box1{
 
     color: white;
     position: absolute;
-    top: 50.92vw;
+    top: 50.92svw;
     display: flex;
     flex-direction: row;
     gap: 3vw;
@@ -366,7 +370,7 @@ body{
                     color: white;
                     font-size: 1.04vw;
                     cursor: pointer;
-                }
+                } 
             
             }
 
@@ -439,7 +443,7 @@ body{
         align-items: center;
         justify-content: center;
         background-color: #ffffff;
-        height: 18.79vw;
+        height: 18.79vw; 
         border-radius: 1.388vw;
         color: black;
         
@@ -448,7 +452,7 @@ body{
         img{
             width: 13.55vw;
             height: 13.55vw;
-        }
+        } 
 
         div{
             gap: 1vw;
@@ -775,3 +779,28 @@ body{
 }
 
 
+footer{
+    width: 100%;
+    position: relative;
+    h3{
+        position: relative;
+        left: 5.72vw;
+        color: white;
+        top: 95.94vw;
+        width: 30vw;
+        height: 2.5vw;
+    }
+
+    div{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 17.36vw;
+        height: 2.256vw;
+        justify-content: space-between;
+        top: 92.79vw;
+        left: 77.25vw;
+
+
+    }
+}
