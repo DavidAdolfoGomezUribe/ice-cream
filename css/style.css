@@ -42,7 +42,7 @@ img, video, svg {
 }
 /* 1728*/
 body {
-  background: none;
+  background: rgb(65, 19, 19);
 }
 
 .background {
@@ -204,6 +204,7 @@ body {
   transform: rotateZ(90deg);
   left: 22vw;
   top: 7.4vw;
+  cursor: pointer;
 }
 
 #prev {
@@ -211,6 +212,7 @@ body {
   left: 22vw;
   top: -1vw;
   transform: rotateZ(90deg);
+  cursor: pointer;
 }
 
 #prev, #next {

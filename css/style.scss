@@ -21,9 +21,9 @@ transition: none;
 }
 /* 1728*/
 body{
-    background: none;
-
+    background:rgb(65, 19, 19);
 }
+
 .background{
     position: absolute;
     width: 100%;
@@ -198,17 +198,21 @@ body{
        }
     }
 }
+
 #next{
     position: absolute;
     transform: rotateZ(90deg);
     left: 22vw;
     top: 7.4vw;
+    cursor: pointer;
 }
 #prev{
     position: absolute;
     left: 22vw;
     top: -1vw;
     transform: rotateZ(90deg);
+    cursor: pointer;
+    
 }
 #prev, #next{
     color: #fff;
@@ -286,8 +290,6 @@ body{
     position: absolute;
     left: 79.39vw;
     top: 45.19vw;
-
-
 
     p{
         font-size: 1.62vw;
