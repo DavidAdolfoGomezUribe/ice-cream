@@ -21,20 +21,37 @@ transition: none;
 }
 /* 1728*/
 body{
-    background:rgb(65, 19, 19);
+    background:rgb(255, 255, 255);
 }
 
 .background{
+   
+   
+    
     position: absolute;
     width: 100%;
     height: auto;
     z-index: -2;
     img{
-        width: 100%;
-        object-fit:fill ;
-        height: 101% ;
         
+        display: flex;
+        align-items: end;
+        position: relative;
+        bottom:0px;
+        width: 100%;
+        height: inherit;
     }
+}
+
+
+.example{
+    display: flex;
+    align-items: end;
+    position: relative;
+    bottom:0px;
+    width: 100%;
+    height: inherit;
+    
 }
 
 .logo{
@@ -783,7 +800,7 @@ footer{
     width: 100%;
     position: relative;
     h3{
-        position: relative;
+        position: absolute;
         left: 5.72vw;
         color: white;
         top: 95.94vw;

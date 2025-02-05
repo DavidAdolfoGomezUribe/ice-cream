@@ -42,7 +42,7 @@ img, video, svg {
 }
 /* 1728*/
 body {
-  background: rgb(65, 19, 19);
+  background: rgb(255, 255, 255);
 }
 
 .background {
@@ -52,10 +52,21 @@ body {
   z-index: -2;
 }
 .background img {
+  display: flex;
+  align-items: end;
+  position: relative;
+  bottom: 0px;
   width: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
-  height: 101%;
+  height: inherit;
+}
+
+.example {
+  display: flex;
+  align-items: end;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  height: inherit;
 }
 
 .logo {
@@ -667,7 +678,7 @@ footer {
   position: relative;
 }
 footer h3 {
-  position: relative;
+  position: absolute;
   left: 5.72vw;
   color: white;
   top: 95.94vw;
