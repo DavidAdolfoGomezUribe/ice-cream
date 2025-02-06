@@ -11,3 +11,23 @@
     --color-10: hsla(0, 0%, 100%, 0.250);
     --color-11: hsla(0, 0%, 100%, 0.100);
 }
+
+@font-face {
+    font-family:"Inter_28pt-SemiBold.ttf" ;
+    src: url(../storage/font/Poppins/Inter_28pt-SemiBold.ttf);
+}
+
+@font-face {
+    font-family:"Poppins-SemiBold.ttf" ;
+    src: url(../storage/font/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family:"Poppins-Medium.ttf" ;
+    src: url(../storage/font/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family:"Poppins-Regular.ttf" ;
+    src: url(../storage/font/Poppins/Poppins-Regular.ttf);
+}

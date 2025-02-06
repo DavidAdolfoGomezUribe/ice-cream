@@ -94,6 +94,7 @@ body {
   font-size: 1.62vw;
   color: white;
   text-decoration: none;
+  font-family: "Inter_28pt-SemiBold.ttf";
 }
 .flexnav img {
   height: 1.73vw;
@@ -101,13 +102,47 @@ body {
 }
 
 .sidemenu {
-  left: 92.36vw;
+  left: 89.36vw;
   position: absolute;
-  top: 6.36vw;
+  top: 5.65vw;
 }
-.sidemenu img {
-  width: 1.48vw;
-  height: 1.62vw;
+.sidemenu #checkbox {
+  display: none;
+}
+.sidemenu .toggle {
+  position: relative;
+  width: 2.25vw;
+  height: 2.25vw;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.56vw;
+  transition-duration: 0.3s;
+}
+.sidemenu .bars {
+  width: 100%;
+  height: 0.23vw;
+  background-color: rgb(253, 255, 243);
+  border-radius: 5px;
+  transition-duration: 0.3s;
+}
+.sidemenu #checkbox:checked + .toggle #bar2 {
+  transform: translateY(0.81vw) rotate(60deg);
+  margin-left: 0;
+  transform-origin: right;
+  transition-duration: 0.3s;
+  z-index: 2;
+}
+.sidemenu #checkbox:checked + .toggle #bar1 {
+  transform: translateY(1.62vw) rotate(-60deg);
+  transition-duration: 0.3s;
+  transform-origin: left;
+  z-index: 1;
+}
+.sidemenu #checkbox:checked + .toggle {
+  transform: rotate(-90deg);
 }
 
 .flextext {
@@ -123,38 +158,36 @@ body {
 }
 .flextext h1 {
   font-size: 6.94vw;
+  font-family: "Poppins-SemiBold.ttf";
+  line-height: 7.2vw;
 }
 .flextext p {
   font-size: 1.38vw;
+  font-family: "Poppins-Medium.ttf";
+  font-weight: 10;
 }
 .flextext div {
   display: flex;
   flex-direction: row;
   gap: 2.2vw;
+  font-family: "Poppins-Regular.ttf";
 }
-.flextext div button:nth-child(1) {
+.flextext div button:hover {
+  outline: 1px solid white;
+}
+.flextext div button {
   width: 15.27vw;
   height: 4.91vw;
   top: 36.57vw;
-  border: 1px solid white;
   background-color: hsla(0, 0%, 0%, 0);
   color: white;
   border-radius: 1vw;
   font-size: 1.85vw;
-  cursor: pointer;
-}
-.flextext div button:nth-child(2) {
-  width: 15.27vw;
-  height: 4.91vw;
-  top: 36.57vw;
   border: none;
+  cursor: pointer;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   background-color: rgba(97, 97, 97, 0.082);
-  color: rgb(255, 255, 255);
-  border-radius: 1vw;
-  font-size: 1.85vw;
-  cursor: pointer;
 }
 
 .slider {
@@ -167,6 +200,7 @@ body {
 }
 
 .item {
+  font-family: "Poppins-Medium.ttf";
   position: absolute;
   padding: 2vw;
   text-align: justify;
@@ -176,7 +210,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1vw;
-  text-align: justify;
 }
 .item p {
   font-size: 1.04vw;
@@ -185,16 +218,19 @@ body {
   display: flex;
   flex-direction: row;
   gap: 0.4vw;
+  align-items: center;
 }
 .item div img {
-  width: 3.35vw;
-  height: 3.38vw;
+  width: 4.15vw;
+  height: 4.18vw;
 }
 .item div div {
   display: flex;
   flex-direction: column;
 }
 .item div div h2 {
+  left: -0.6vw;
+  position: relative;
   font-size: 1.62vw;
 }
 .item div div div {
@@ -254,6 +290,7 @@ body {
 }
 .choosetype p {
   font-size: 1.15vw;
+  font-family: "Poppins-Medium.ttf";
 }
 .choosetype div {
   display: flex;
@@ -281,6 +318,7 @@ body {
 }
 
 .trendy {
+  font-family: "Poppins-Medium.ttf";
   display: flex;
   flex-direction: row;
   background-color: #ffffff;
@@ -318,7 +356,6 @@ body {
   align-items: center;
 }
 .box1 .card1 {
-  border: 1px solid rgba(255, 255, 255, 0.75);
   display: flex;
   flex-direction: row;
   width: 39.93vw;
@@ -340,10 +377,12 @@ body {
   flex-direction: column;
 }
 .box1 .card1 div h2 {
+  font-family: "Poppins-Medium.ttf";
   font-size: 1.62vw;
 }
 .box1 .card1 div p {
   font-size: 1.15vw;
+  font-family: "Poppins-Medium.ttf";
 }
 .box1 .card1 div .buttonflex1 {
   display: flex;
@@ -354,6 +393,7 @@ body {
   align-items: center;
 }
 .box1 .card1 div .buttonflex1 button {
+  font-family: "Poppins-Regular.ttf";
   background-color: transparent;
   border: 1px solid hsla(0, 0%, 100%, 0.75);
   border-radius: 0.46vw;
@@ -383,6 +423,7 @@ body {
 }
 .box1 .card1 div .textrow1 .amountflex1 p {
   font-size: 1vw;
+  font-family: "Poppins-Regular.ttf";
 }
 .box1 .card1 div .textrow1 .amountflex1 button {
   width: 1.3vw;
@@ -394,6 +435,7 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  font-family: "Poppins-Regular.ttf";
 }
 .box1 .card1 div .textrow1 .amountflex1 button:nth-child(1) {
   height: 1vw;
@@ -404,91 +446,188 @@ body {
   border-left: 1px solid white;
 }
 
-.box1 .card2 {
-  display: flex;
-  flex-direction: row;
-  width: 39.93vw;
-  gap: 1.73vw;
-  align-items: center;
-  justify-content: center;
-  background-color: #ffffff;
-  height: 18.79vw;
-  border-radius: 1.388vw;
-  color: black;
-}
-.box1 .card2 img {
-  width: 13.55vw;
-  height: 13.55vw;
-}
-.box1 .card2 div {
-  gap: 1vw;
-  display: flex;
-  flex-direction: column;
-}
-.box1 .card2 div h2 {
-  font-size: 1.62vw;
-}
-.box1 .card2 div p {
-  font-size: 1.15vw;
-}
-.box1 .card2 div .buttonflex2 {
-  display: flex;
-  flex-direction: row;
-  color: white;
-  gap: 1.21vw;
-  justify-content: center;
-  align-items: center;
-}
-.box1 .card2 div .buttonflex2 button {
-  background-color: transparent;
-  border: 1px solid hsla(0, 0%, 0%, 0.75);
-  border-radius: 0.46vw;
-  width: 8.04vw;
-  height: 2.31vw;
-  color: rgb(0, 0, 0);
-  font-size: 1.04vw;
-}
-.box1 .card2 div .textrow2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.box1 .card2 div .textrow2 p {
-  font-size: 1.62vw;
-}
-.box1 .card2 div .textrow2 .amountflex2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  border: 1px solid rgb(7, 7, 7);
-  height: 1.67vw;
-  border-radius: 0.63vw;
-}
-.box1 .card2 div .textrow2 .amountflex2 p {
-  font-size: 1vw;
-}
-.box1 .card2 div .textrow2 .amountflex2 button {
-  width: 1.3vw;
-  font-size: 0.81vw;
-  color: rgb(0, 0, 0);
-  background-color: transparent;
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.box1 .card1:hover {
+  outline: 1px solid rgba(255, 255, 255, 0.75);
   cursor: pointer;
 }
-.box1 .card2 div .textrow2 .amountflex2 button:nth-child(1) {
+.box1 .card1:active {
+  color: black;
+  background-color: #fff;
+  cursor: grabbing;
+}
+.box1 .card1:active div .amountflex1 {
+  outline: 1px solid black;
+  color: black;
+}
+.box1 .card1:active div .amountflex1 button {
+  outline: none;
+  color: black;
+  border: black;
+}
+.box1 .card1:active div .amountflex1 button:nth-child(1) {
   height: 1vw;
   border-right: 1px solid rgb(0, 0, 0);
 }
-.box1 .card2 div .textrow2 .amountflex2 button:nth-child(3) {
+.box1 .card1:active div .amountflex1 button:nth-child(3) {
   height: 1vw;
-  border-left: 1px solid rgb(0, 0, 0);
+  border-left: 1px solid rgb(2, 2, 2);
+}
+.box1 .card1:active div button {
+  color: black;
+  outline: 1px solid black;
 }
 
+.box2 .card1:hover {
+  outline: 1px solid rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+}
+.box2 .card1:active {
+  color: black;
+  background-color: #fff;
+  cursor: grabbing;
+}
+.box2 .card1:active div .buttonflex1 button {
+  color: black;
+  outline: 1px solid black;
+}
+.box2 .card1:active div .textrow1 .amountflex1 {
+  outline: 1px solid black;
+  color: black;
+}
+.box2 .card1:active div .textrow1 .amountflex1 button {
+  outline: none;
+  color: black;
+  border: black;
+}
+.box2 .card1:active div .textrow1 .amountflex1 button:nth-child(1) {
+  height: 1vw;
+  border-right: 1px solid rgb(0, 0, 0);
+}
+.box2 .card1:active div .textrow1 .amountflex1 button:nth-child(3) {
+  height: 1vw;
+  border-left: 1px solid rgb(2, 2, 2);
+}
+
+/*
+
+.box1{
+
+    .card2{
+        display: flex;
+        flex-direction: row;
+        width: 39.93vw;
+        gap: 1.73vw;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        height: 18.79vw; 
+        border-radius: 1.388vw;
+        color: black;
+
+
+
+        img{
+            width: 13.55vw;
+            height: 13.55vw;
+        } 
+
+        div{
+            gap: 1vw;
+            display: flex;
+            flex-direction: column;
+
+            h2{
+                font-size: 1.62vw;
+                font-family:"Poppins-Medium.ttf" ;
+            }
+            p{
+                font-size: 1.15vw;
+                font-family:"Poppins-Medium.ttf" ;
+
+            }
+
+            .buttonflex2{
+                display: flex;
+                flex-direction: row;
+                color: white;
+                gap: 1.21vw;
+                justify-content: center;
+                align-items: center;
+
+
+                button{
+                    font-family:"Poppins-Regular.ttf" ;
+                    background-color: transparent;
+                    border: 1px solid hsla(0, 0%, 0%, 0.75);
+                    border-radius: 0.46vw;
+                    width: 8.04vw;
+                    height: 2.31vw;
+                    color: rgb(0, 0, 0);
+                    font-size: 1.04vw;
+                }
+            }
+
+            .textrow2{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                p{
+                    font-size: 1.62vw;
+
+                }
+
+                .amountflex2{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    border: 1px solid rgb(7, 7, 7); 
+                    height: 1.67vw;
+                    border-radius: 0.63vw;
+
+                    p{
+                        font-size: 1vw;
+                        font-family:"Poppins-Regular.ttf" ;
+                    }
+
+                    button{
+                        width: 1.3vw;
+                        font-size: 0.81vw;
+                        color: rgb(0, 0, 0);
+                        background-color: transparent;
+                        border: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        font-family:"Poppins-Regular.ttf" ;
+                    }
+
+                    button:nth-child(1){
+
+                        height: 1vw;
+                        border-right: 1px solid rgb(0, 0, 0);
+
+                    }
+
+                    button:nth-child(3){
+
+                        height: 1vw;
+                        border-left: 1px solid rgb(0, 0, 0);
+                    }
+
+                }
+
+            }
+
+        }
+    }
+
+}
+
+*/
 .box2 {
   color: white;
   position: absolute;
@@ -500,8 +639,118 @@ body {
   width: 82.87vw;
   height: 18.75vw;
   align-items: center;
+  /* preview styles*/
+  /*
+  .card3{
+
+      display: flex;
+      flex-direction: row;
+      width: 39.93vw;
+      gap: 1.73vw;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(10px);
+      border-radius: 1.38vw;
+      height: 18.79vw;
+
+      img{
+          width: 13.55vw;
+          height: 13.55vw;
+      }
+      div{
+          gap: 1vw;
+          display: flex;
+          flex-direction: column;
+
+          h2{
+              font-size: 1.62vw;
+          }
+          p{
+              font-size: 1.15vw;
+          }
+
+          .buttonflex3{
+              display: flex;
+              flex-direction: row;
+              color: white;
+              gap: 1.21vw;
+              justify-content: center;
+              align-items: center;
+
+              button{
+                  background-color: transparent;
+                  border: 1px solid hsla(0, 0%, 100%, 0.75);
+                  border-radius: 0.46vw;
+                  width: 8.04vw;
+                  height: 2.31vw;
+                  color: white;
+                  font-size: 1.04vw;
+
+              }
+
+          }
+
+          .textrow3{
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+
+              p{
+                  font-size: 1.62vw;
+
+              }
+              .amountflex3{
+
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-evenly;
+                  align-items: center;
+                  border: 1px solid white; 
+                  height: 1.67vw;
+                  border-radius: 0.63vw;
+
+                  p{
+                      font-size: 1vw;
+                  }
+
+
+
+
+                  button{
+                      width: 1.3vw;
+                      font-size: 0.81vw;
+                      color: white;
+                      background-color: transparent;
+                      border: none;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      cursor: pointer;
+                  }
+
+                  button:nth-child(1){
+
+                      height: 1vw;
+                      border-right: 1px solid white;
+                  }
+
+                  button:nth-child(3){
+
+                      height: 1vw;
+                      border-left: 1px solid white;
+                  }
+
+              }
+
+          }
+
+      }
+  }
+
+  */
 }
-.box2 .card3 {
+.box2 .card1 {
   display: flex;
   flex-direction: row;
   width: 39.93vw;
@@ -513,22 +762,24 @@ body {
   border-radius: 1.38vw;
   height: 18.79vw;
 }
-.box2 .card3 img {
+.box2 .card1 img {
   width: 13.55vw;
   height: 13.55vw;
 }
-.box2 .card3 div {
+.box2 .card1 div {
   gap: 1vw;
   display: flex;
   flex-direction: column;
 }
-.box2 .card3 div h2 {
+.box2 .card1 div h2 {
+  font-family: "Poppins-Medium.ttf";
   font-size: 1.62vw;
 }
-.box2 .card3 div p {
+.box2 .card1 div p {
   font-size: 1.15vw;
+  font-family: "Poppins-Medium.ttf";
 }
-.box2 .card3 div .buttonflex3 {
+.box2 .card1 div .buttonflex1 {
   display: flex;
   flex-direction: row;
   color: white;
@@ -536,7 +787,8 @@ body {
   justify-content: center;
   align-items: center;
 }
-.box2 .card3 div .buttonflex3 button {
+.box2 .card1 div .buttonflex1 button {
+  font-family: "Poppins-Regular.ttf";
   background-color: transparent;
   border: 1px solid hsla(0, 0%, 100%, 0.75);
   border-radius: 0.46vw;
@@ -544,17 +796,18 @@ body {
   height: 2.31vw;
   color: white;
   font-size: 1.04vw;
+  cursor: pointer;
 }
-.box2 .card3 div .textrow3 {
+.box2 .card1 div .textrow1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.box2 .card3 div .textrow3 p {
+.box2 .card1 div .textrow1 p {
   font-size: 1.62vw;
 }
-.box2 .card3 div .textrow3 .amountflex3 {
+.box2 .card1 div .textrow1 .amountflex1 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -563,10 +816,11 @@ body {
   height: 1.67vw;
   border-radius: 0.63vw;
 }
-.box2 .card3 div .textrow3 .amountflex3 p {
+.box2 .card1 div .textrow1 .amountflex1 p {
   font-size: 1vw;
+  font-family: "Poppins-Regular.ttf";
 }
-.box2 .card3 div .textrow3 .amountflex3 button {
+.box2 .card1 div .textrow1 .amountflex1 button {
   width: 1.3vw;
   font-size: 0.81vw;
   color: white;
@@ -576,103 +830,130 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  font-family: "Poppins-Regular.ttf";
 }
-.box2 .card3 div .textrow3 .amountflex3 button:nth-child(1) {
+.box2 .card1 div .textrow1 .amountflex1 button:nth-child(1) {
   height: 1vw;
   border-right: 1px solid white;
 }
-.box2 .card3 div .textrow3 .amountflex3 button:nth-child(3) {
+.box2 .card1 div .textrow1 .amountflex1 button:nth-child(3) {
   height: 1vw;
   border-left: 1px solid white;
 }
 
-.box2 .card4 {
-  display: flex;
-  flex-direction: row;
-  width: 39.93vw;
-  gap: 1.73vw;
-  align-items: center;
-  justify-content: center;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  height: 18.79vw;
-  border-radius: 1.388vw;
-  color: white;
-  border: 1px solid white;
-}
-.box2 .card4 img {
-  width: 13.55vw;
-  height: 13.55vw;
-}
-.box2 .card4 div {
-  gap: 1vw;
-  display: flex;
-  flex-direction: column;
-}
-.box2 .card4 div h2 {
-  font-size: 1.62vw;
-}
-.box2 .card4 div p {
-  font-size: 1.15vw;
-}
-.box2 .card4 div .buttonflex4 {
-  display: flex;
-  flex-direction: row;
-  color: white;
-  gap: 1.21vw;
-  justify-content: center;
-  align-items: center;
-}
-.box2 .card4 div .buttonflex4 button {
-  background-color: transparent;
-  border: 1px solid hsla(0, 0%, 100%, 0.75);
-  border-radius: 0.46vw;
-  width: 8.04vw;
-  height: 2.31vw;
-  color: rgb(255, 255, 255);
-  font-size: 1.04vw;
-}
-.box2 .card4 div .textrow4 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.box2 .card4 div .textrow4 p {
-  font-size: 1.62vw;
-}
-.box2 .card4 div .textrow4 .amountflex4 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  border: 1px solid white;
-  height: 1.67vw;
-  border-radius: 0.63vw;
-}
-.box2 .card4 div .textrow4 .amountflex4 p {
-  font-size: 1vw;
-}
-.box2 .card4 div .textrow4 .amountflex4 button {
-  width: 1.3vw;
-  font-size: 0.81vw;
-  color: white;
-  background-color: transparent;
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-.box2 .card4 div .textrow4 .amountflex4 button:nth-child(1) {
-  height: 1vw;
-  border-right: 1px solid rgb(255, 255, 255);
-}
-.box2 .card4 div .textrow4 .amountflex4 button:nth-child(3) {
-  height: 1vw;
-  border-left: 1px solid rgb(255, 255, 255);
+/*
+.box2{
+
+    .card4{
+        display: flex;
+        flex-direction: row;
+        width: 39.93vw;
+        gap: 1.73vw;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(10px);
+        height: 18.79vw;
+        border-radius: 1.388vw;
+        color: white;
+        border: 1px solid white;
+
+
+
+        img{
+            width: 13.55vw;
+            height: 13.55vw;
+        }
+
+        div{
+            gap: 1vw;
+            display: flex;
+            flex-direction: column;
+
+            h2{
+                font-size: 1.62vw;
+            }
+            p{
+                font-size: 1.15vw;
+            }
+
+            .buttonflex4{
+                display: flex;
+                flex-direction: row;
+                color: white;
+                gap: 1.21vw;
+                justify-content: center;
+                align-items: center;
+
+
+                button{
+                    background-color: transparent;
+                    border: 1px solid hsla(0, 0%, 100%, 0.75);
+                    border-radius: 0.46vw;
+                    width: 8.04vw;
+                    height: 2.31vw;
+                    color: rgb(255, 255, 255);
+                    font-size: 1.04vw;
+                }
+            }
+
+            .textrow4{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                p{
+                    font-size: 1.62vw;
+
+                }
+
+                .amountflex4{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    border: 1px solid white; 
+                    height: 1.67vw;
+                    border-radius: 0.63vw;
+
+                    p{
+                        font-size: 1vw;
+                    }
+
+                    button{
+                        width: 1.3vw;
+                        font-size: 0.81vw;
+                        color: white;
+                        background-color: transparent;
+                        border: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+                    button:nth-child(1){
+
+                        height: 1vw;
+                        border-right: 1px solid rgb(255, 255, 255);
+                    }
+
+                    button:nth-child(3){
+
+                        height: 1vw;
+                        border-left: 1px solid rgb(255, 255, 255);
+                    }
+
+                }
+
+            }
+
+        }
+    }
+
 }
 
+
+*/
 footer {
   width: 100%;
   position: relative;
@@ -684,6 +965,8 @@ footer h3 {
   top: 95.94vw;
   width: 30vw;
   height: 2.5vw;
+  font-family: "Poppins-Regular.ttf";
+  font-size: 1.04vw;
 }
 footer div {
   position: relative;
@@ -692,6 +975,9 @@ footer div {
   width: 17.36vw;
   height: 2.256vw;
   justify-content: space-between;
-  top: 92.79vw;
+  top: 94.79vw;
   left: 77.25vw;
+}
+footer div img {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
