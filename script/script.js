@@ -44,3 +44,26 @@ prev.onclick = function(){
     active = active - 1 >= 0 ? active -1 : active;
     loadShow();
 }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".amountflex1").forEach(container => {
+        let plus = container.querySelector(".plus");
+        let minus = container.querySelector(".minus");
+        let number = container.querySelector(".number");
+
+        let a = parseInt(number.innerText);
+
+        plus.addEventListener("click", () => {
+            a++;
+            number.innerText = a < 10 ? "0" + a : a;
+        });
+
+        minus.addEventListener("click", () => {
+            if (a > 1) {
+                a--;
+                number.innerText = a < 10 ? "0" + a : a;
+            }
+        });
+    });
+});
