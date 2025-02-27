@@ -67,3 +67,71 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+
+const products = [
+
+{
+    image:"",
+    name: "Mix Ice cream",
+    "typer-order": [
+                    "On Table",
+                    "Delivery"
+    ],
+    
+    price : [
+        199, 0
+    ]
+
+}
+,
+{
+    image:"",
+    name: "Chocolate Cup",
+    "typer-order": [
+                    "On Table",
+                    "Delivery"
+    ],
+    
+    price : [
+        199, 0
+    ]
+
+}
+,
+{
+    image:"",
+    name: "Barry Ice cream",
+    "typer-order": [
+                    "On Table",
+                    "Delivery"
+    ],
+    
+    price : [
+        199, 0
+    ]
+
+}
+,
+{
+    image:"",
+    name: "Strawnberry Ice cream",
+    "typer-order": [
+                    "On Table",
+                    "Delivery"
+    ],
+    
+    price : [
+        199, 0
+    ]
+
+}
+
+
+
+
+
+]
+
+
+
